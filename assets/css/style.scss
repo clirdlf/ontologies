@@ -2,3 +2,18 @@
 ---
 
 @import "{{ site.theme }}";
+
+dl {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  // display: flex;
+  // flex-wrap: wrap;
+}
+
+dt {
+  font-weight: 700;
+}
+
+dd {
+  margin-bottom: 1rem;
+}

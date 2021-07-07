@@ -5,10 +5,22 @@ description: CLIR Grants ontology for describing grant applications.
 ---
 ## Basic Info
 
-**Label:** CLIR Grant Ontology
-**Comment:** Ontology fields to describe CLIR program grant applications.
-**Namespace URI:** https://clirdlf.github.io/ontologies/grants
-**Namespace prefix:** clir
+<dl>
+  <dt>Label</dt>
+  <dd>CLIR Grant Ontology</dd>
+
+  <dt>Comment</dt>
+  <dd>Ontology fields to describe CLIR program grant applications.</dd>
+
+  <dt>Namespace URI</dt>
+  <dd>https://clirdlf.github.io/ontologies/grants</dd>
+
+  <dt>Namespace prefix</dt>
+  <dd>clir</dd>
+</dl>
 
 ## File
-**Vocabulary URL** https://clirdlf.github.io/ontologies/clir.ttl
+<dl>
+  <dt>Vocabulary URL</dt>
+  <dd><a href="{{ site.url | append: '/clir.ttl' }}">{{ site.url | append: '/clir.ttl' }}</a></dd>
+</dl>

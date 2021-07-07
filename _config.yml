@@ -4,6 +4,7 @@ author: CLIR
 description: >
   Ontologies developed by CLIR for work in Omeka S
 theme: jekyll-theme-tactile
+url: https://clirdlf.github.io/ontologies
 
 show_downloads: false
 google_analytics: ''
