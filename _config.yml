@@ -5,5 +5,5 @@ description: >
   Ontologies developed by CLIR for work in Omeka S
 theme: jekyll-theme-tactile
 
-show_downloads: true
+show_downloads: false
 google_analytics: ''
