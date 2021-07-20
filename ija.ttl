@@ -1,0 +1,337 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix o: <http://omeka.org/s/vocabs/o#> .
+@prefix ija: <https://www.ijarchive.org/ns/ija#> .
+
+<https://www.ijarchive.org/ns/ija#> a owl:Ontology ;
+    dcterms:title "Iraqi Jewish Archive Ontology" .
+
+ija:Object a rdfs:Class ;
+    rdfs:label "Iraqi Jewish Archive Object" ;
+    rdfs:comment "Resource class for objects in the Iraqi Jewish Archive" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+ija:label a rdf:Property ;
+    rdfs:label "Label" ;
+    rdfs:comment "Object Label" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+ija:date_of_publication_hebrew a rdf:Property ;
+    rdfs:label "Hebrew Date of Publication" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+ija:inclusive_start_date a rdf:Property ;
+    rdfs:label "Inclusive Start Date" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+ija:inclusive_end_date a rdf:Property ;
+    rdfs:label "Inclusive End Date" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+ija:decade_of_publication a rdf:Property ;
+    rdfs:label "Decade of Publication" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+ija:record_type a rdf:Property ;
+    rdfs:label "Record Type" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+ija:annotation a rdf:Property ;
+    rdfs:label "Kind of annotation" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+ija:annotation_location a rdf:Property ;
+    rdfs:label "Placement of annotation" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+ija:annotations a rdf:Property ;
+    rdfs:label "Contains annotations?" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+ija:note a rdf:Property ;
+    rdfs:label "Conservation note" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+ija:form_genre a rdf:Property ;
+    rdfs:label "Form Genre" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+ija:archival_materials_type a rdf:Property ;
+    rdfs:label "Type of Archival Materials" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+ija:book_format a rdf:Property ;
+    rdfs:label "Book Format" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+ija:archival_materials_format a rdf:Property ;
+    rdfs:label "Format of Archival Materials" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+ija:binding_format a rdf:Property ;
+    rdfs:label "Binding Format" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+ija:cover_material a rdf:Property ;
+    rdfs:label "Cover Material" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+ija:size a rdf:Property ;
+    rdfs:label "Object Size" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+ija:thickness a rdf:Property ;
+    rdfs:label "Object Thickness" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+ija:height a rdf:Property ;
+    rdfs:label "Object Height" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+ija:width a rdf:Property ;
+    rdfs:label "Object Width" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+ija:depth a rdf:Property ;
+    rdfs:label "Object Depth" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+ija:media a rdf:Property ;
+    rdfs:label "Object Media" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+ija:attachments a rdf:Property ;
+    rdfs:label "Object Attachments" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+ija:format_note a rdf:Property ;
+    rdfs:label "Format Notes" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+ija:geographic_note a rdf:Property ;
+    rdfs:label "Geographic Notes" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+ija:content_note a rdf:Property ;
+    rdfs:label "Content Notes" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+ija:binding_missing a rdf:Property ;
+    rdfs:label "Is the binding missing?" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+ija:blocked a rdf:Property ;
+    rdfs:label "Blocking" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+ija:fused a rdf:Property ;
+    rdfs:label "Fused" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+ija:text_or_paper_missing a rdf:Property ;
+    rdfs:label "Text or Paper Missing" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+ija:binding_detached_or_loose a rdf:Property ;
+    rdfs:label "Binding Detached or Loose" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+ija:text_or_paper_broken_or_detached a rdf:Property ;
+    rdfs:label "Text or Paper Broken or Detached" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+ija:binding_distorted a rdf:Property ;
+    rdfs:label "Binding Distorted" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+ija:text_or_paper_distorted a rdf:Property ;
+    rdfs:label "Text or Paper Distorted" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+ija:binding_moldy_or_dirty a rdf:Property ;
+    rdfs:label "Binding Moldy or Dirty" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+ija:text_or_paper_moldy_or_dirty a rdf:Property ;
+    rdfs:label "Text or Paper Moldy or Dirty" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+ija:binding_rusty a rdf:Property ;
+    rdfs:label "Binding Rusty" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+ija:text_or_paper_rusty a rdf:Property ;
+    rdfs:label "Text or Paper Rusty" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+ija:binding_stained a rdf:Property ;
+    rdfs:label "Binding Stained" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+ija:text_or_paper_stained a rdf:Property ;
+    rdfs:label "Text or Paper Stained" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+ija:condition_note a rdf:Property ;
+    rdfs:label "Condition Notes" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+ija:mold_recommendation a rdf:Property ;
+    rdfs:label "Mold Recommendation" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+ija:treatment_needed a rdf:Property ;
+    rdfs:label "Treatment Needed" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+ija:mold_remediation a rdf:Property ;
+    rdfs:label "Treatment Remediation" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+ija:mold_treatment_time a rdf:Property ;
+    rdfs:label "Mold Treatment Time" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+ija:flattening a rdf:Property ;
+    rdfs:label "Flattening" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+ija:disbound_disassembled a rdf:Property ;
+    rdfs:label "Dsibound Disassembed" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+ija:mended a rdf:Property ;
+    rdfs:label "Mended" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+ija:other_treatment a rdf:Property ;
+    rdfs:label "Other Treatment" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+ija:rehoused a rdf:Property ;
+    rdfs:label "Rehoused" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+ija:total_treatment_time a rdf:Property ;
+    rdfs:label "Total Treatment Time" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+ija:image_count a rdf:Property ;
+    rdfs:label "Image Count" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+ija:ija_dup_imaged a rdf:Property ;
+    rdfs:label "IJA Dup Imaged" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+ija:exhibit a rdf:Property ;
+    rdfs:label "Exhibit" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+ija:metadata a rdf:Property ;
+    rdfs:label "Keywords" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+ija:trunk_of_origin a rdf:Property ;
+    rdfs:label "Trunk of Origin" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+ija:box_number a rdf:Property ;
+    rdfs:label "Box Number" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+ija:record_status a rdf:Property ;
+    rdfs:label "Record Status" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+ija:record_creator a rdf:Property ;
+    rdfs:label "Record Creator" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+ija:cataloger_name a rdf:Property ;
+    rdfs:label "Cataloger Name" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+ija:second_cataloger a rdf:Property ;
+    rdfs:label "Second Cataloger" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+ija:box_number_2014 a rdf:Property ;
+    rdfs:label "2014 Box Number" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+ija:box_type_2014 a rdf:Property ;
+    rdfs:label "2014 Box Type" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+ija:dpi a rdf:Property ;
+    rdfs:label "Imaging DPI" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
