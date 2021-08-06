@@ -4,14 +4,21 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
 @prefix o: <http://omeka.org/s/vocabs/o#> .
-@prefix ija: <https://www.ijarchive.org/ns/ija#> .
+@prefix ija: <https://clirdlf.github.io/ontologies/ija> .
 
-<https://www.ijarchive.org/ns/ija#> a owl:Ontology ;
-    dcterms:title "Iraqi Jewish Archive Ontology" .
+<https://clirdlf.github.io/ontologies/ija> a owl:Ontology ;
+    dcterms:title "Iraqi Jewish Archive Ontology" ;
+    dcterms:description "Ontology fields to describe IJA objects developed by NARA" .
 
 ija:Object a rdfs:Class ;
     rdfs:label "Iraqi Jewish Archive Object" ;
     rdfs:comment "Resource class for objects in the Iraqi Jewish Archive" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+ija:ija_number a rdf:Property ;
+    rdfs:label "IJA Number" ;
+    rdfs:comment "IJA Number assigned by NARA" ;
     rdfs:domain o:Resource ;
     vs:term_status "experimental" .
 
@@ -20,18 +27,6 @@ ija:label a rdf:Property ;
     rdfs:comment "Object Label" ;
     rdfs:domain o:Resource ;
     vs:term_status "experimental" .
-
-ija:author_corporate a rdf:Property ;
-    rdfs:label "Label" ;
-    rdfs:comment "Author (Corporate)" ;
-    rdfs:domain o:Resource ;
-    vs:term_status "experimental" .  
-
-ija:author_personal a rdf:Property ;
-    rdfs:label "Label" ;
-    rdfs:comment "Author (Personal)" ;
-    rdfs:domain o:Resource ;
-    vs:term_status "experimental" . 
 
 ija:date_of_publication_hebrew a rdf:Property ;
     rdfs:label "Hebrew Date of Publication" ;
@@ -238,11 +233,6 @@ ija:mold_recommendation a rdf:Property ;
     rdfs:domain o:Resource ;
     vs:term_status "experimental" .
 
-ija:mold_remediation a rdf:Property ;
-    rdfs:label "Mold Remediation" ;
-    rdfs:domain o:Resource ;
-    vs:term_status "experimental" .
-
 ija:treatment_needed a rdf:Property ;
     rdfs:label "Treatment Needed" ;
     rdfs:domain o:Resource ;
@@ -298,11 +288,6 @@ ija:ija_dup_imaged a rdf:Property ;
     rdfs:domain o:Resource ;
     vs:term_status "experimental" .
 
-ija:ija_number a rdf:Property ;
-    rdfs:label "IJA Number assigned by NARA" ;
-    rdfs:domain o:Resource ;
-    vs:term_status "experimental" .
-
 ija:exhibit a rdf:Property ;
     rdfs:label "Exhibit" ;
     rdfs:domain o:Resource ;
@@ -355,5 +340,15 @@ ija:box_type_2014 a rdf:Property ;
 
 ija:dpi a rdf:Property ;
     rdfs:label "Imaging DPI" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+ija:author_corporate a rdf:Property ;
+    rdfs:label "Author (Corporate)" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+ija:author_personal a rdf:Property ;
+    rdfs:label "Author (Personal)" ;
     rdfs:domain o:Resource ;
     vs:term_status "experimental" .
