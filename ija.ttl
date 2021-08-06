@@ -21,6 +21,18 @@ ija:label a rdf:Property ;
     rdfs:domain o:Resource ;
     vs:term_status "experimental" .
 
+ija:author_corporate a rdf:Property ;
+    rdfs:label "Label" ;
+    rdfs:comment "Author (Corporate)" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .  
+
+ija:author_personal a rdf:Property ;
+    rdfs:label "Label" ;
+    rdfs:comment "Author (Personal)" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" . 
+
 ija:date_of_publication_hebrew a rdf:Property ;
     rdfs:label "Hebrew Date of Publication" ;
     rdfs:domain o:Resource ;
@@ -226,6 +238,11 @@ ija:mold_recommendation a rdf:Property ;
     rdfs:domain o:Resource ;
     vs:term_status "experimental" .
 
+ija:mold_remediation a rdf:Property ;
+    rdfs:label "Mold Remediation" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
 ija:treatment_needed a rdf:Property ;
     rdfs:label "Treatment Needed" ;
     rdfs:domain o:Resource ;
@@ -247,7 +264,7 @@ ija:flattening a rdf:Property ;
     vs:term_status "experimental" .
 
 ija:disbound_disassembled a rdf:Property ;
-    rdfs:label "Dsibound Disassembed" ;
+    rdfs:label "Disbound Disassembed" ;
     rdfs:domain o:Resource ;
     vs:term_status "experimental" .
 
@@ -278,6 +295,11 @@ ija:image_count a rdf:Property ;
 
 ija:ija_dup_imaged a rdf:Property ;
     rdfs:label "IJA Dup Imaged" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+ija:ija_number a rdf:Property ;
+    rdfs:label "IJA Number assigned by NARA" ;
     rdfs:domain o:Resource ;
     vs:term_status "experimental" .
 
