@@ -4,11 +4,11 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
 @prefix o: <http://omeka.org/s/vocabs/o#> .
-@prefix clir: <http://omeka.clir.org/ns/clir> .
+@prefix clir: <https://clirdlf.github.io/ontologies/grants> .
 
-<http://omeka.clir.org/ns/clir> a owl:Ontology ;
+<https://clirdlf.github.io/ontologies/grants> a owl:Ontology ;
     dcterms:title "CLIR Grants Registry Ontology" ;
-    dcterms:description "Ontology to describe grants submitted to CLIR in the Hidden Collections, Digitizing Hidden Collections, and Recordings at Risk programs" .
+    dcterms:description "Ontology to describe grants submitted to CLIR in the Hidden Collections, Digitizing Hidden Collections, and Recordings at Risk programs." .
 
 clir:Application a rdfs:Class ;
     rdfs:label "CLIR application for a regranting program" ;
@@ -78,5 +78,15 @@ clir:pi3Institution a rdf:Property ;
 clir:request a rdf:Property ;
     rdfs:label "Request" ;
     rdfs:comment "Amount the application budgeted for" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+clir:contactAddress a rdf:Property ;
+    rdfs:label "Mailing address" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+clir:collaboratesWith a rdf:Property ;
+    rdfs:label "Collaborating Institution" ;
     rdfs:domain o:Resource ;
     vs:term_status "experimental" .

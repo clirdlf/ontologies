@@ -7,8 +7,7 @@
 @prefix ija: <https://clirdlf.github.io/ontologies/ija> .
 
 <https://clirdlf.github.io/ontologies/ija> a owl:Ontology ;
-    dcterms:title "Iraqi Jewish Archive Ontology" ;
-    dcterms:description "Ontology fields to describe IJA objects developed by NARA" .
+    dcterms:title "Ontology fields to describe IJA objects developed by NARA" .
 
 ija:Object a rdfs:Class ;
     rdfs:label "Iraqi Jewish Archive Object" ;
@@ -340,6 +339,41 @@ ija:box_type_2014 a rdf:Property ;
 
 ija:dpi a rdf:Property ;
     rdfs:label "Imaging DPI" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+ija:date_created a rdf:Property ;
+    rdfs:label "Date digital record was created by NARA" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+ija:updated_date a rdf:Property ;
+    rdfs:label "Date digital record was updated by NARA" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+ija:date_of_publication a rdf:Property ;
+    rdfs:label "Date of original publication" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+ija:imaging_notes a rdf:Property ;
+    rdfs:label "Imaging notes" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+ija:partial_view a rdf:Property ;
+    rdfs:label "Partial View" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+ija:place_of_publication a rdf:Property ;
+    rdfs:label "Place of Publication" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+ija:sort_title a rdf:Property ;
+    rdfs:label "Sort Title" ;
     rdfs:domain o:Resource ;
     vs:term_status "experimental" .
 
